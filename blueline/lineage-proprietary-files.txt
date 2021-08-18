@@ -1,9 +1,7 @@
 # Radio
--app/atfwd/atfwd.apk
 -app/datastatusnotification/datastatusnotification.apk
 -app/ims/ims.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
--app/uceShimService/uceShimService.apk
 -app/uimremoteclient/uimremoteclient.apk
 -app/uimremoteserver/uimremoteserver.apk
 bin/move_time_data.sh
@@ -35,7 +33,6 @@ lib/libimsmedia_jni.so
 lib/libqcbor_system.so
 lib/librcc.so
 lib/libsdm-disp-apis.so
--priv-app/CNEService/CNEService.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # SecureUI

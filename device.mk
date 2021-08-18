@@ -301,8 +301,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.cne.feature=1 \
-    persist.vendor.data.iwlan.enable=true \
+    persist.vendor.cne.feature=0 \
+    persist.vendor.data.iwlan.enable=false \
     persist.radio.RATE_ADAPT_ENABLE=1 \
     persist.radio.ROTATION_ENABLE=1 \
     persist.radio.VT_ENABLE=1 \
@@ -319,7 +319,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sap_silent_pin=1 \
     persist.vendor.radio.multisim_switch_support=false \
     persist.vendor.radio.manual_nw_rej_ct=1 \
-    persist.rcs.supported=1 \
+    persist.rcs.supported=0 \
     vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     ro.hardware.keystore_desede=true \
 
@@ -709,12 +709,10 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.fpc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.fingerprint.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.fingerprint.sh \
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # DRV2624 Haptics Waveform
 PRODUCT_COPY_FILES += \
